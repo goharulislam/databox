@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanilla JS</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+<div class="container">
+<div class="row">
+<div class="col-3 col-s-12">
+    <img src="./images/logo.jpg" alt="logo" />
+</div><!--col-->
+<div class="col-9 col-s-12">
+    <ul class="nav">
+        <li>FILTER:</li>
+        <li><a href="#" class="active">All</a></li>
+        <li><a href="#">Free</a></li>
+        <li><a href="#">Paying</a></li>
+    </ul>
+</div><!--col-->
+</div><!--row-->
+</div><!--con-->
+</header>
+
+<section class="search">
+<div class="container">
+<div class="row">
+<div class="col-12">
+    <input type="text" id="post_id" onkeyup="searching()" placeholder="Enter id">
+    <button type="button">Create new Account</button>
+</div><!--col-->
+</div><!--row-->
+</div><!--con-->
+</section>
+
+<section class="data">
+<div class="container">
+<div class="row">
+<div class="col-12">
+
+<div class="table-wrapper">
+<div class="table-scroll">
+<table>
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Company</th>
+        <th>Email</th>
+    </tr>
+</thead>
+<tbody id="users">
+</tbody>
+</table>
+</div>
+</div>
+
+</div><!--col-->
+</div><!--row-->
+</div><!--con-->
+</section>
+
+<script src="./vanilla.js"></script>
+</body>
+</html>
